@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace ImpExpData
 {
-    class Program
+    internal class Program
     {
+        internal static readonly log4net.ILog Log =
+            log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         static void Main(string[] args)
         {
+            Log.Info("Program started.");
+            Log.Info("Program finished.");
         }
     }
 }
