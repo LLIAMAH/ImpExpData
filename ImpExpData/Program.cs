@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ImpExpData.Classes;
+using System;
 
 namespace ImpExpData
 {
@@ -14,9 +11,14 @@ namespace ImpExpData
         static void Main(string[] args)
         {
             Log.Info("ImpExpData started.");
-
-            var arguments = new Arguments(args);
-
+            try
+            {
+                var arguments = new Arguments(args);
+            }
+            catch(Exception ex)
+            {
+                Log.Error(ex.Message);
+            }
 
             Log.Info("ImpExpData finished.");
         }
