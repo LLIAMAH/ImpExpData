@@ -67,7 +67,7 @@
     <Compile Include="Classes\Arguments.cs" />
     <Compile Include="Models\Ctx.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\CustomerType.cs" />
+    <Compile Include="Models\Code.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

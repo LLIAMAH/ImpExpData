@@ -2,7 +2,7 @@
 
 namespace ImpExpData.Models
 {
-    public class CustomerType
+    public class Code
     {
         [Key]
         public long CustomerTypeId { get; set; }
