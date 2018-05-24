@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Arguments.cs" />
+    <Compile Include="Classes\TextLine.cs" />
     <Compile Include="Models\Ctx.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Code.cs" />

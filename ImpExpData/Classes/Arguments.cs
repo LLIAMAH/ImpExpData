@@ -13,7 +13,7 @@ namespace ImpExpData.Classes
     public class Arguments
     {
         public EOperation Operation { get; private set; }
-        public string[] FileName { get; private set; }
+        public string FileName { get; private set; }
 
         public Arguments(string[] args)
         {
@@ -29,7 +29,7 @@ namespace ImpExpData.Classes
             if(file.Count() != 1)
                 throw new Exception("Error: Must be one file with '.csv' extension.");
 
-            this.FileName = file;
+            this.FileName = file[0];
 
             switch (operation[0])
             {
