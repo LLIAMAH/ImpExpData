@@ -33,8 +33,8 @@ namespace ImpExpData.Classes
 
             switch (operation[0])
             {
-                case "import": { this.Operation = EOperation.Import; }break;
-                case "export": { this.Operation = EOperation.Export; } break;
+                case "-import": { this.Operation = EOperation.Import; }break;
+                case "-export": { this.Operation = EOperation.Export; } break;
                 default: { throw new Exception("Error: Unknown operation's type: it must be '-import' or '-export'"); }
             }
         }
