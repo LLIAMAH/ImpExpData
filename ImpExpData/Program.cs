@@ -13,8 +13,12 @@ namespace ImpExpData
 
         static void Main(string[] args)
         {
-            Log.Info("Program started.");
-            Log.Info("Program finished.");
+            Log.Info("ImpExpData started.");
+
+            var arguments = new Arguments(args);
+
+
+            Log.Info("ImpExpData finished.");
         }
     }
 }
